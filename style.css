@@ -1,0 +1,262 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/* body{
+  height: 100vh;
+} */
+form {
+  margin-top: 80px;
+}
+h3 {
+  letter-spacing: 1px;
+}
+.bg-light-subtle {
+  background-color: #f0edffcc !important;
+}
+.social-btn {
+  border: 1px solid #e0e0e0;
+  border-radius: 30px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  background-color: white;
+  text-decoration: none;
+  color: #000;
+  font-weight: 400;
+  transition: background-color 0.3s ease;
+}
+.mybtn {
+  background: linear-gradient(to right, #9181f4, #5038ed);
+  border: none;
+  color: white;
+  transition: background 0.3s ease;
+  padding: 10px 35px;
+}
+.mybtn:hover {
+  background: linear-gradient(to right, #7f6de3, #3f2ed6);
+}
+.social-btn:hover {
+  background-color: #f8f9fa;
+}
+
+.social-btn i {
+  font-size: 20px;
+}
+
+.social-text b {
+  font-weight: bold;
+}
+.divider-text {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #555;
+}
+
+.divider-text::before,
+.divider-text::after {
+  content: "";
+  flex: 3;
+  height: 1px;
+  background: #ccc;
+}
+
+.divider-text::before {
+  margin-right: 0.75rem;
+}
+
+.divider-text::after {
+  margin-left: 0.75rem;
+}
+
+.bg-decor {
+  background-image: url("img/image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
+  z-index: 1;
+  opacity: 1;
+  width: 100%;
+  min-height: 100%;
+  /* border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px; */
+}
+#image-box {
+  border-radius: 3px;
+}
+
+#login-image {
+  height: 60vh !important;
+  width: auto;
+  z-index: 2;
+  position: absolute;
+  top: 75px;
+
+  left: 140px;
+}
+
+.text-box {
+  background-image: url(img/bg.png);
+  border-radius: 46px;
+  color: white;
+  z-index: 2;
+  backdrop-filter: blur(3px);
+  padding: 10px 20px;
+  /* margin-top: 30px; */
+  margin-bottom: 40px;
+  width: 26vw;
+  height: 70vh;
+}
+.text-box p {
+  /* background-color: red; */
+  font-size: 30px;
+  width: 160px;
+  line-height: 44px;
+}
+
+.circle-icon {
+  width: 79px;
+  height: 79px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: -40px;
+  transform: translateY(-50%);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  bottom: 40px;
+}
+
+.icon-inside {
+  font-size: 30px;
+  color: #f4b400;
+}
+
+/* @media (max-width: 776px) {
+  .row {
+    height: auto !important;
+  }
+
+  #login-image {
+    height: 35vh !important;
+
+    top: 151px;
+
+    left: 75px;
+  }
+  .text-box {
+    width: 37vw;
+    height: 50vh;
+    margin-top: 100px;
+  }
+  .text-box p {
+    font-size: 23px !important;
+    width: 110px !important;
+    line-height: 34px !important;
+  }
+}
+@media (max-width: 776px) {
+  .row {
+    height: auto !important;
+  }
+
+  #login-image {
+    height: 35vh !important;
+
+    top: 151px;
+
+    left: 75px;
+  }
+  .text-box {
+    width: 37vw;
+    height: 50vh;
+    margin-top: 100px;
+  }
+  .text-box p {
+    font-size: 23px !important;
+    width: 110px !important;
+    line-height: 34px !important;
+  }
+} */
+@media (max-width: 1000px) {
+  /* .row {
+    height: auto !important;
+  } */
+
+  #login-image {
+    height: 35vh !important;
+    top: 127px !important;
+    left: 100px !important;
+  }
+  .text-box {
+    width: 42vw;
+    height: 45vh;
+    margin-top: 0px !important;
+  }
+  .text-box p {
+    font-size: 29px !important;
+    width: 110px !important;
+    line-height: 34px !important;
+  }
+  form {
+    margin-top: 300px !important;
+  }
+}
+
+@media (max-width: 776px) {
+  .row {
+    height: auto !important;
+  }
+
+  #login-image {
+    height: 35vh !important;
+
+    top: 151px !important;
+
+    left: 75px !important;
+  }
+  .text-box {
+    width: 37vw;
+    height: 50vh;
+    margin-top: 170px !important;
+  }
+  .text-box p {
+    font-size: 23px !important;
+    width: 110px !important;
+    line-height: 34px !important;
+  }
+  form {
+    margin-top: 150px !important;
+  }
+}
+@media (max-width: 576px) {
+  .row {
+    height: auto;
+    overflow: hidden;
+  }
+   form{
+    margin-top: 40px !important;
+  }
+}
+
+@keyframes fadeSlideBlur {
+  0% {
+    transform: translateY(-50px) scale(0.95);
+    opacity: 0;
+    filter: blur(10px);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+.login-form {
+  animation: fadeSlideBlur 1s ease-out forwards;
+}
